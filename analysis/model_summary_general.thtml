@@ -1,0 +1,34 @@
+<p>Observables (xmin, xmax, nbins):</p>
+<ul>
+<li>MVA_ee (-1, 1, 20)</li>
+<li>MVA_mumu (-1, 1, 20)</li>
+</ul>
+<p>Background processes:</p>
+<ul>
+<li>DYToLL_M50</li>
+<li>TT</li>
+<li>TTW</li>
+<li>TTZ</li>
+<li>TbartChan</li>
+<li>TbartW</li>
+<li>TtW</li>
+<li>ZZ</li>
+</ul>
+<p>Signal processes:</p><ul>
+<li>tZq</li>
+</ul>
+<p>Nuisance parameters (includes only those which apply to the background-only model):</p>
+<ul>
+<li>ME_PS (morph only)</li>
+<li>TTW_rate (rate only)</li>
+<li>TTZ_rate (rate only)</li>
+<li>ZZ_rate (rate only)</li>
+<li>bTag (morph only)</li>
+<li>jer (morph only)</li>
+<li>jes (morph only)</li>
+<li>lumi (rate only)</li>
+<li>met (morph only)</li>
+<li>pdf (morph only)</li>
+<li>pileup (morph only)</li>
+<li>trig (morph only)</li>
+</ul>

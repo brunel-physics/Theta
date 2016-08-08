@@ -1,0 +1,16 @@
+<p>Rates for all observables and processes as given by the 'nominal' templates. If errors are given, they are MC stat. uncertainties.</p>
+<table cellpadding="2" border="1">
+<tr><th>process / observable</th><th>MVA_ee</th><th>MVA_mumu</th></tr>
+<tr><td>DYToLL_M50</td><td>21.997 +/- 1.0262</td><td>38.844 +/- 1.3761</td></tr>
+<tr><td>TT</td><td>5.4039 +/- 0.17955</td><td>11.454 +/- 0.26714</td></tr>
+<tr><td>TTW</td><td>0.0031097 +/- 0.0032682</td><td>0.0075524 +/- 0.0044105</td></tr>
+<tr><td>TTZ</td><td>0.54854 +/- 0.057319</td><td>0.60802 +/- 0.062374</td></tr>
+<tr><td>TbartChan</td><td>---</td><td>0.11286 +/- 0.11275</td></tr>
+<tr><td>TbartW</td><td>---</td><td>0.057613 +/- 0.057558</td></tr>
+<tr><td>TtW</td><td>0.067937 +/- 0.067872</td><td>0.10631 +/- 0.077438</td></tr>
+<tr><td>ZZ</td><td>0.0046749 +/- 0.00077067</td><td>0.0074218 +/- 0.0010005</td></tr>
+<tr><td><b>total background</b></td><td>28.025 +/- 1.0456</td><td>51.197 +/- 1.411</td></tr>
+<tr><td>tZq</td><td>23.016 +/- 1.0456</td><td>38.025 +/- 1.4111</td></tr>
+<tr><td><b>DATA</b></td><td>23</td><td>38</td></tr>
+</table>
+

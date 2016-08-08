@@ -1,0 +1,15 @@
+<h2>Stackplots</h2>
+<p>Everything normalized to expectation, i.e., to the normalization in the template input file, possibly scaled via the python script file.</p>
+<p>Color Code:</p><ul>
+<li><span style="background: #edd400;">&nbsp;&nbsp;&nbsp;</span> DYToLL_M50</li>
+<li><span style="background: #f57900;">&nbsp;&nbsp;&nbsp;</span> TT</li>
+<li><span style="background: #c17d11;">&nbsp;&nbsp;&nbsp;</span> TTW</li>
+<li><span style="background: #73d216;">&nbsp;&nbsp;&nbsp;</span> TTZ</li>
+<li><span style="background: #3465a4;">&nbsp;&nbsp;&nbsp;</span> TbartChan</li>
+<li><span style="background: #75507b;">&nbsp;&nbsp;&nbsp;</span> TbartW</li>
+<li><span style="background: #d3d7cf;">&nbsp;&nbsp;&nbsp;</span> TtW</li>
+<li><span style="background: #555753;">&nbsp;&nbsp;&nbsp;</span> ZZ</li>
+<li><span style="background: #ef2929;">&nbsp;&nbsp;&nbsp;</span> tZq</li>
+</ul>
+<p>Observable 'MVA_ee':<br /><img src="plots/MVA_ee_stack.png" /></p>
+<p>Observable 'MVA_mumu':<br /><img src="plots/MVA_mumu_stack.png" /></p>

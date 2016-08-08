@@ -1,0 +1,154 @@
+<?xml version="1.0" ?>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head><title>theta-auto Report</title>
+    <script type="text/javascript" src="js/prototype.js"></script>
+    <script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    <link rel="stylesheet" href="css/lightbox.css" type="text/css" media="screen" />
+    <style type="text/css">
+    body {margin: 30px; font-family: Verdana, Arial, sans-serif; font-size: 12px; background:#eee;}
+    h1, h2, h3 { padding: 0.2ex; padding-left:.8ex;}
+    h1 {font-size: 150%%; background: #d44;}
+    h2 {font-size: 110%%; background: #f88; padding-left:1.3ex;}
+    h3 {font-size: 100%%; background: #aaa; padding-left:1.3ex;}
+    .inner {padding-left: 3ex;}
+    a img{ border: none;}
+    p {margin:0 0 0 0; margin-top: 1.3ex;}
+    ul {margin:0 0 0 0;}
+    </style>
+    </head><body>
+    <p>Hint: click on top-level headers to toggle visibility of that section.</p>
+    <h1 onclick=$('div1').toggle()>1. General Model Info</h1><div class="inner" id="div1">
+<p>Observables (xmin, xmax, nbins):</p>
+<ul>
+<li>MVA_ee (-1, 1, 20)</li>
+<li>MVA_mumu (-1, 1, 20)</li>
+</ul>
+<p>Background processes:</p>
+<ul>
+<li>DYToLL_M50</li>
+<li>TT</li>
+<li>TTW</li>
+<li>TTZ</li>
+<li>TbartChan</li>
+<li>TbartW</li>
+<li>TtW</li>
+<li>ZZ</li>
+</ul>
+<p>Signal processes:</p><ul>
+<li>tZq</li>
+</ul>
+<p>Nuisance parameters (includes only those which apply to the background-only model):</p>
+<ul>
+<li>ME_PS (morph only)</li>
+<li>TTW_rate (rate only)</li>
+<li>TTZ_rate (rate only)</li>
+<li>ZZ_rate (rate only)</li>
+<li>bTag (morph only)</li>
+<li>jer (morph only)</li>
+<li>jes (morph only)</li>
+<li>lumi (rate only)</li>
+<li>met (morph only)</li>
+<li>pdf (morph only)</li>
+<li>pileup (morph only)</li>
+<li>trig (morph only)</li>
+</ul>
+
+</div>
+<h1 onclick=$('div2').toggle()>2. Rate Summary</h1><div class="inner" id="div2">
+<p>Rates for all observables and processes as given by the 'nominal' templates. If errors are given, they are MC stat. uncertainties.</p>
+<table cellpadding="2" border="1">
+<tr><th>process / observable</th><th>MVA_ee</th><th>MVA_mumu</th></tr>
+<tr><td>DYToLL_M50</td><td>21.997 +/- 1.0262</td><td>38.844 +/- 1.3761</td></tr>
+<tr><td>TT</td><td>5.4039 +/- 0.17955</td><td>11.454 +/- 0.26714</td></tr>
+<tr><td>TTW</td><td>0.0031097 +/- 0.0032682</td><td>0.0075524 +/- 0.0044105</td></tr>
+<tr><td>TTZ</td><td>0.54854 +/- 0.057319</td><td>0.60802 +/- 0.062374</td></tr>
+<tr><td>TbartChan</td><td>---</td><td>0.11286 +/- 0.11275</td></tr>
+<tr><td>TbartW</td><td>---</td><td>0.057613 +/- 0.057558</td></tr>
+<tr><td>TtW</td><td>0.067937 +/- 0.067872</td><td>0.10631 +/- 0.077438</td></tr>
+<tr><td>ZZ</td><td>0.0046749 +/- 0.00077067</td><td>0.0074218 +/- 0.0010005</td></tr>
+<tr><td><b>total background</b></td><td>28.025 +/- 1.0456</td><td>51.197 +/- 1.411</td></tr>
+<tr><td>tZq</td><td>23.016 +/- 1.0456</td><td>38.025 +/- 1.4111</td></tr>
+<tr><td><b>DATA</b></td><td>23</td><td>38</td></tr>
+</table>
+
+
+</div>
+<h1 onclick=$('div3').toggle()>3. Rate Impact of Systematic Uncertainties</h1><div class="inner" id="div3">
+<p>The table below summarises the impact of an nuisance parameter on the rate prediction of a process.</p>
+    <p>For a nuisance parameter, (gauss) indicates that this nuisance parameter has a gaussian prior, (gamma) that it has a gamma prior.</p>
+    <p>For the individual cells, (r) indicates the 'rate only' part of the uncertainty, (s) indicates the effect on the rate of an uncertainty
+    treated via template morphing (i.e., the <em>rate</em> effect of an uncertainty treated as part of the
+    template morphing; even if this is zero, the shape effect is still taken into account). Note that both effects are applied seperatly, so
+    the total rate change is about the linear sum of these two.<br/>
+    The rate change in 'plus' direction of the uncertainty is written as superscript,
+    the 'minus' direction as subscript.<br/>All numbers are in percent.</p>
+<h2>Observable 'MVA_ee'</h2>
+<table cellpadding="2" border="1">
+<tr><th>process / nuisance parameter</th><th>ME_PS (gauss)</th><th>TTW_rate (gauss)</th><th>TTZ_rate (gauss)</th><th>ZZ_rate (gauss)</th><th>bTag (gauss)</th><th>jer (gauss)</th><th>jes (gauss)</th><th>lumi (gauss)</th><th>met (gauss)</th><th>pdf (gauss)</th><th>pileup (gauss)</th><th>trig (gauss)</th></tr>
+<tr><td>DYToLL_M50</td><td><sup>-4.19</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td><sup>+3.61</sup><sub>-3.61</sub> (s) </td><td><sup>+12.82</sup><sub>-10.32</sub> (s) </td><td><sup>+0.37</sup><sub>-0.27</sub> (s) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+4.23</sup><sub>-3.79</sub> (s) </td><td><sup>+0.23</sup><sub>-0.03</sub> (s) </td><td><sup>+10.48</sup><sub>-9.68</sub> (s) </td></tr>
+<tr><td>TT</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td><sup>+2.50</sup><sub>-2.50</sub> (s) </td><td><sup>+8.91</sup><sub>-9.68</sub> (s) </td><td><sup>-0.85</sup><sub>+0.90</sub> (s) </td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+3.47</sup><sub>-3.10</sub> (s) </td><td><sup>+0.51</sup><sub>-0.11</sub> (s) </td><td><sup>+10.43</sup><sub>-9.64</sub> (s) </td></tr>
+<tr><td>TTW</td><td><sup>-9.69</sup><sub>-5.13</sub> (s) </td><td>&#xb1;30.00 (r)</td><td>---</td><td>---</td><td><sup>+5.81</sup><sub>-5.81</sub> (s) </td><td><sup>+60.10</sup><sub>+54.32</sub> (s) </td><td><sup>+54.45</sup><sub>+0.00</sub> (s) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+2.93</sup><sub>-3.44</sub> (s) </td><td><sup>+0.28</sup><sub>-6.74</sub> (s) </td><td><sup>+10.18</sup><sub>-9.44</sub> (s) </td></tr>
+<tr><td>TTZ</td><td><sup>-1.23</sup><sub>-1.94</sub> (s) </td><td>---</td><td>&#xb1;30.00 (r)</td><td>---</td><td><sup>+2.07</sup><sub>-2.07</sub> (s) </td><td><sup>+1.08</sup><sub>-0.39</sub> (s) </td><td><sup>+0.23</sup><sub>-1.98</sub> (s) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+4.88</sup><sub>-4.10</sub> (s) </td><td><sup>-1.41</sup><sub>+2.59</sub> (s) </td><td><sup>+10.71</sup><sub>-9.87</sub> (s) </td></tr>
+<tr><td>TtW</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td><sup>+1.04</sup><sub>-1.04</sub> (s) </td><td><sup>+0.00</sup><sub>-0.00</sub> (s) </td><td><sup>+0.00</sup><sub>-0.00</sub> (s) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+3.21</sup><sub>-3.09</sub> (s) </td><td><sup>+20.90</sup><sub>-27.14</sub> (s) </td><td><sup>+6.60</sup><sub>-6.29</sub> (s) </td></tr>
+<tr><td>ZZ</td><td><sup>-5.19</sup><sub>-5.14</sub> (s) </td><td>---</td><td>---</td><td>&#xb1;30.00 (r)</td><td><sup>+2.87</sup><sub>-2.87</sub> (s) </td><td><sup>+10.85</sup><sub>-8.18</sub> (s) </td><td><sup>+2.84</sup><sub>-2.57</sub> (s) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+7.78</sup><sub>-5.85</sub> (s) </td><td><sup>+6.09</sup><sub>-7.30</sub> (s) </td><td><sup>+10.18</sup><sub>-9.41</sub> (s) </td></tr>
+<tr><td>tZq</td><td><sup>-99.09</sup><sub>-99.04</sub> (s) </td><td>---</td><td>---</td><td>---</td><td><sup>-99.03</sup><sub>-99.08</sub> (s) </td><td><sup>-98.96</sup><sub>-99.16</sub> (s) </td><td><sup>-99.05</sup><sub>-99.04</sub> (s) </td><td>&#xb1;2.60 (r)</td><td><sup>-99.05</sup><sub>-99.05</sub> (s) </td><td><sup>-99.00</sup><sub>-99.09</sub> (s) </td><td><sup>-99.06</sup><sub>-99.06</sub> (s) </td><td><sup>-98.96</sup><sub>-99.14</sub> (s) </td></tr>
+</table>
+
+<h2>Observable 'MVA_mumu'</h2>
+<table cellpadding="2" border="1">
+<tr><th>process / nuisance parameter</th><th>ME_PS (gauss)</th><th>TTW_rate (gauss)</th><th>TTZ_rate (gauss)</th><th>ZZ_rate (gauss)</th><th>bTag (gauss)</th><th>jer (gauss)</th><th>jes (gauss)</th><th>lumi (gauss)</th><th>met (gauss)</th><th>pdf (gauss)</th><th>pileup (gauss)</th><th>trig (gauss)</th></tr>
+<tr><td>DYToLL_M50</td><td><sup>-4.84</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td><sup>+3.61</sup><sub>-3.61</sub> (s) </td><td><sup>+12.07</sup><sub>-10.07</sub> (s) </td><td><sup>-0.25</sup><sub>+0.09</sub> (s) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+4.47</sup><sub>-4.06</sub> (s) </td><td><sup>+1.25</sup><sub>-1.22</sub> (s) </td><td><sup>+1.17</sup><sub>-1.16</sub> (s) </td></tr>
+<tr><td>TT</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td><sup>+2.26</sup><sub>-2.26</sub> (s) </td><td><sup>+9.90</sup><sub>-10.68</sub> (s) </td><td><sup>-0.71</sup><sub>+0.41</sub> (s) </td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+3.63</sup><sub>-3.09</sub> (s) </td><td><sup>-0.26</sup><sub>+0.28</sub> (s) </td><td><sup>+1.11</sup><sub>-1.11</sub> (s) </td></tr>
+<tr><td>TTW</td><td><sup>-3.54</sup><sub>-1.62</sub> (s) </td><td>&#xb1;30.00 (r)</td><td>---</td><td>---</td><td><sup>+1.90</sup><sub>-1.90</sub> (s) </td><td><sup>-12.91</sup><sub>-28.06</sub> (s) </td><td><sup>-0.00</sup><sub>+0.00</sub> (s) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>-0.50</sup><sub>-1.22</sub> (s) </td><td><sup>+2.35</sup><sub>-5.35</sub> (s) </td><td><sup>+0.99</sup><sub>-0.98</sub> (s) </td></tr>
+<tr><td>TTZ</td><td><sup>-2.10</sup><sub>-1.55</sub> (s) </td><td>---</td><td>&#xb1;30.00 (r)</td><td>---</td><td><sup>+2.56</sup><sub>-2.56</sub> (s) </td><td><sup>+3.83</sup><sub>-6.99</sub> (s) </td><td><sup>+0.30</sup><sub>+1.57</sub> (s) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+5.12</sup><sub>-4.36</sub> (s) </td><td><sup>+3.47</sup><sub>-2.75</sub> (s) </td><td><sup>+1.15</sup><sub>-1.14</sub> (s) </td></tr>
+<tr><td>TbartChan</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td>---</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+5.00</sup><sub>-3.76</sub> (s) </td><td><sup>+4.77</sup><sub>-13.25</sub> (s) </td><td><sup>+1.43</sup><sub>-1.42</sub> (s) </td></tr>
+<tr><td>TbartW</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td><sup>+5.87</sup><sub>-5.87</sub> (s) </td><td><sup>+0.10</sup><sub>-0.10</sub> (s) </td><td><sup>+0.00</sup><sub>-0.00</sub> (s) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+2.57</sup><sub>-1.61</sub> (s) </td><td><sup>+20.90</sup><sub>-27.14</sub> (s) </td><td><sup>+0.86</sup><sub>-0.86</sub> (s) </td></tr>
+<tr><td>TtW</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td>---</td><td>---</td><td>---</td><td><sup>+1.33</sup><sub>-1.33</sub> (s) </td><td><sup>+0.02</sup><sub>-62.57</sub> (s) </td><td><sup>-0.00</sup><sub>+0.00</sub> (s) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+3.02</sup><sub>-2.66</sub> (s) </td><td><sup>+38.72</sup><sub>-35.18</sub> (s) </td><td><sup>+0.99</sup><sub>-0.98</sub> (s) </td></tr>
+<tr><td>ZZ</td><td><sup>-6.79</sup><sub>-4.61</sub> (s) </td><td>---</td><td>---</td><td>&#xb1;30.00 (r)</td><td><sup>+3.58</sup><sub>-3.58</sub> (s) </td><td><sup>+6.40</sup><sub>-18.05</sub> (s) </td><td><sup>+4.11</sup><sub>+0.62</sub> (s) </td><td>&#xb1;2.60 (r)</td><td><sup>+0.00</sup><sub>+0.00</sub> (s) </td><td><sup>+4.10</sup><sub>-3.98</sub> (s) </td><td><sup>+2.91</sup><sub>-3.43</sub> (s) </td><td><sup>+1.12</sup><sub>-1.11</sub> (s) </td></tr>
+<tr><td>tZq</td><td><sup>-99.05</sup><sub>-99.01</sub> (s) </td><td>---</td><td>---</td><td>---</td><td><sup>-98.99</sup><sub>-99.04</sub> (s) </td><td><sup>-98.96</sup><sub>-99.08</sub> (s) </td><td><sup>-99.01</sup><sub>-99.01</sub> (s) </td><td>&#xb1;2.60 (r)</td><td><sup>-99.02</sup><sub>-99.02</sub> (s) </td><td><sup>-98.96</sup><sub>-99.06</sub> (s) </td><td><sup>-99.02</sup><sub>-99.01</sub> (s) </td><td><sup>-99.01</sup><sub>-99.03</sub> (s) </td></tr>
+</table>
+
+
+</div>
+<h1 onclick=$('div4').toggle()>4. Nuisance Parameter Priors</h1><div class="inner" id="div4">
+
+    <p>The priors for the nuisance parameters are either Gaussian or gamma distributions. As limit cases, these can have with=0 or width=inf
+    which makes them delta or flat distributions, respectively.</p>
+    <div class="inner"><h3>Prior Parameters</h3>
+<table cellpadding="2" border="1">
+<tr><th>parameter</th><th>distribution type</th><th>distribution parameters</th></tr>
+<tr><td>jer</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>jes</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>bTag</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>ME_PS</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>trig</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>lumi</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>ZZ_rate</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>met</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>TTZ_rate</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>TTW_rate</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>pdf</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+<tr><td>pileup</td><td>gauss</td><td>width = 1.0; range = [-inf, inf]; mean = 0.0</td></tr>
+</table>
+
+</div>
+    </div>
+</div>
+<h1 onclick=$('div5').toggle()>5. Basic Model Plots</h1><div class="inner" id="div5">
+<h2>Stackplots</h2>
+<p>Everything normalized to expectation, i.e., to the normalization in the template input file, possibly scaled via the python script file.</p>
+<p>Color Code:</p><ul>
+<li><span style="background: #edd400;">&nbsp;&nbsp;&nbsp;</span> DYToLL_M50</li>
+<li><span style="background: #f57900;">&nbsp;&nbsp;&nbsp;</span> TT</li>
+<li><span style="background: #c17d11;">&nbsp;&nbsp;&nbsp;</span> TTW</li>
+<li><span style="background: #73d216;">&nbsp;&nbsp;&nbsp;</span> TTZ</li>
+<li><span style="background: #3465a4;">&nbsp;&nbsp;&nbsp;</span> TbartChan</li>
+<li><span style="background: #75507b;">&nbsp;&nbsp;&nbsp;</span> TbartW</li>
+<li><span style="background: #d3d7cf;">&nbsp;&nbsp;&nbsp;</span> TtW</li>
+<li><span style="background: #555753;">&nbsp;&nbsp;&nbsp;</span> ZZ</li>
+<li><span style="background: #ef2929;">&nbsp;&nbsp;&nbsp;</span> tZq</li>
+</ul>
+<p>Observable 'MVA_ee':<br /><img src="plots/MVA_ee_stack.png" /></p>
+<p>Observable 'MVA_mumu':<br /><img src="plots/MVA_mumu_stack.png" /></p>
