@@ -18,9 +18,10 @@ optionscls = Options()
 optionscls.set('minimizer', 'strategy', 'robust')
   
 # -------------- TO CHANGE BY THE USER
-#signalname = 'FCNC_ttbar_kappa_zut'
+
 signalname = 'tZq'
 signal_init_xs =  0.008184
+# Need to update with di-lepton x-section
 #signal_init_xs = 0.00783  
 # -------------- TO CHANGE BY THE USER
 # for model building:
@@ -43,12 +44,16 @@ def get_model(signalname):
 
 # WZsplit -> WZbc and WZl 19/11/2015 
 # For di-lepton change abck to WZ   
+# and then commented out as this is zero for di-lepton....needs re-checking
+
 #    model.add_lognormal_uncertainty('WZbc_rate',   math.log(2.0), 'WZbc')
 #    model.add_lognormal_uncertainty('WZl_rate',     math.log(2.0), 'WZl')
 #    model.add_lognormal_uncertainty('WZ_rate',     math.log(2.0), 'WZ')
     
     uncertainty_mu = 5.0
     uncertainty_el = 5.0
+
+# Commented out for di-lepton...needs checking
      
     #for the mumu channel
 #    model.add_lognormal_uncertainty('FakeRate_mu', math.log(uncertainty_mu),       'Zjets', 'MVA_mumu')
